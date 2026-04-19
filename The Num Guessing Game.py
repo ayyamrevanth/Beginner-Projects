@@ -3,7 +3,20 @@ import random
 """lowest_num = 1 #comment
 highest_num = 100
 """
-
 toStoreRndmGuessedNum = random.randint(1,100)
+# print(toStoreRndmGuessedNum)
+attempts = 0
+is_running = True
+while is_running:
 
-print(toStoreRndmGuessedNum)
+    guess= int(input("Enter your Guessed Number: "))
+    attempts +=1
+    
+    if guess > toStoreRndmGuessedNum:
+        print("Guessed Number is to High")
+    elif guess < toStoreRndmGuessedNum:
+        print("Guessed Number is to Low")
+
+    else:
+        print(f"Congratulations..! You Guessed correct Number {guess} in {attempts} Attempts.")
+        is_running = False
