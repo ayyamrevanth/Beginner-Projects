@@ -7,6 +7,8 @@ toStoreRndmGuessedNum = random.randint(1,100)
 # print(toStoreRndmGuessedNum)
 attempts = 0
 is_running = True
+print("---Welcome to The Guessing Game---")
+print("Guess a Number between 1 to 100")
 while is_running:
     try:
 
